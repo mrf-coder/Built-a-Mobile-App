@@ -125,5 +125,203 @@ console.log(bonusPoints)
 
 
 ```
+#### Adding a Button  HTML
+```js
+ // Create a INCREMENT button with the id="increment-btn"
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <!-- Create a INCREMENT button with the id="increment-btn" -->
+        <button id="increment-btn">INCREMENT</button>
+        <script src="index.js"></script>
+    </body>
+</html>
+```
+#### challege
+ intialize the count as 0
+ listen for clicks on the increment button
+ increment the count variable when the button is clicked
+ change the count-el in the HTML to reflect the new count
+
+ ```js
+   <html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+```
+```js
+function increment() {
+    console.log("The button was clicked")
+}
+//function 
+function countdown() {  
+    console.log(5)
+    console.log(4)
+    console.log(3)
+    console.log(2)
+    console.log(1)
+}
+countdown()
+countdown()
+countdown()
+```
+#### Create a function 
+ Create a function (you decide the name) that logs out the number 42 to the console
+ Call/invoke the function
+```js
+let num = 42;
+function number(){
+    console.log(num)
+}number()
+```
+let lap1 = 34
+let lap2 = 33
+let lap3 = 36
+
+###### Create a function that logs out the sum of all the lap times
+```js
+let lap1 = 34  // Global Scope Variable
+let lap2 = 33  // Global Scope Variable
+let lap3 = 36  // Global Scope Variable
+function totallapps(){
+    console.log(lap1+lap2+lap3)
+ }totallapps()
+
+//--------make block scope variable -------------------------------
+function logLapTime() {
+    let totalTime = lap1 + lap2 + lap3 // Block Scop Variable
+    console.log(totalTime)
+}
+console.log(totalTime)//Error Because this variable has block scope
+logLapTime()
+
+```
+###### Create a function that increments the lapsCompleted variable with one
+ Run it three times
+
+```js
+   let count = 0;
+ function increment(){
+    count = count + 1   // or count +=count
+}
+increment()
+increment()
+increment()
+ console.log(count)   //log out  3
+```
+intialize the count as 0
+listen for clicks on the increment button
+increment the count variable when the button is clicked (log it out)
+change the count-el in the HTML to reflect the new count
+```js
+let count = 0
+
+function increment() {
+    count = count + 1
+    console.log(count)
+}
+//-------------------------------------
+let countEl = document.getElementById("count-el")
+
+console.log(countEl)
+
+let count = 0
+
+function increment() {
+    count = count + 1
+    countEl.innerText = count
+}
+
+
+```
+###### Create a function, save(), which logs out the count when it's called
+```js
+function save (){                     //HTML
+    console.log(count)       // <button id="save-btn" onclick="save()">SAVE</button>
+ }  save ()
+```
+###### Create a variable, message, that stores the string: "You have tree new notifications"
+
+```js
+let message = "You have tree new notifications";
+console.log(message)
+
+let username = "per"
+let message = "You have tree new notifications"
+
+console.log(message + ", " + username + "!")
+
+// Create a variable, messageToUser, that contains the message we have logged
+let messageToUser ="that contains the message we have logged"
+console.log(messageToUser+ ", " + username + "!")
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+
+```js
+```
+```js
+```
+```js
+```
+```js
+```
+
+
 
 
