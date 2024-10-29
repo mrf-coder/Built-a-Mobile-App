@@ -74,7 +74,7 @@ button {
 //=====seprated JavaScript file index.js link with HTML
 <html>
     <head>                                                               JavaScript
-        <link rel="stylesheet" href="index.css">               <-----    document.getElementById("count-el").innerText = 5
+        <link rel="stylesheet" href="index.css">             //  <-----    document.getElementById("count-el").innerText = 5
     </head>
     <body>
         <h1>People entered:</h1>
@@ -268,11 +268,47 @@ console.log(message + ", " + username + "!")
 let messageToUser ="that contains the message we have logged"
 console.log(messageToUser+ ", " + username + "!")
 ```
+Create two variables, name and greeting. The name variable should store your name,
+and the greeting should store e.g. "Hi, my name is "
+ Create a third variable, myGreeting, that contatenates the two strings
+ Log myGreeting to the console
+
 ```js
+let name = "Jon"
+let greeting ="Hi my name is"
+let myGreeting= greeting+" "+name
+console.log(myGreeting)
+
+
+console.log(4 + 5) // 9
+console.log("2" + "4") // "24"
+console.log("5" + 1) // "51"
+console.log(100 + "100") // "100100"
 ```
+Grab the welcome-el paragraph and store it in a variable called welcomeEl
+
+Create two variables (name & greeting) that contains your name
+and the greeting we want to render on the page
+
+####### Render the welcome message using welcomeEl.innerText
 ```js
+let welcomeEl= document.getElementById("welcome-el")
+  
+  let name="Jon Doe"
+  let greeting = "Wellcome Back "
+  
+  welcomeEl.innerText=greeting+name
 ```
+  Create a variable that contains both the count and the dash separator, i.e. "12 - "
+Render the variable in the saveEl using innerText
+   NB: Make sure to not delete the existing content of the paragraph
 ```js
+let saveEl = document.getElementById("save-el")
+ function save() {
+    let saveStr=count+" - "
+    saveEl.textContent+=saveStr;                          //HTML
+    console.log(count)  count=0
+}  console.log(saveEl)                                              // <p id="save-el">Previous entires: </p>
 ```
 ```js
 ```
